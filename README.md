@@ -20,17 +20,18 @@
 El repositorio debe contener:
 
 ```
-├── 01.py
-├── 02.py
-├── 03.py
-├── ...
-├── 30.py
+├── soluciones/
+│   ├── 01.py
+│   ├── 02.py
+│   ├── 03.py
+│   ├── ...
+│   └── 30.py
 ├── data/
 │   └── personas.csv
 └── README.md  (con las soluciones)
 ```
 
-Cada archivo `.py` debe contener el código que resuelve el ejercicio correspondiente.
+Cada archivo `.py` dentro de la carpeta `soluciones/` debe contener el código que resuelve el ejercicio correspondiente.
 
 ---
 
@@ -100,7 +101,7 @@ A continuación se listan los 30 ejercicios. **Debe escribir el valor exacto de 
 
 ## Ejemplo de Solución
 
-### Archivo `02.py`
+### Archivo `soluciones/02.py`
 
 ```python
 import pandas as pd
@@ -132,10 +133,10 @@ print(f"El nombre 'Maria' aparece {cantidad} veces")
 
 ```bash
 # Ejecutar un script de solución
-uv run python 01.py
+uv run python soluciones/01.py
 
 # O si no usa uv
-python 01.py
+python soluciones/01.py
 ```
 
 ---

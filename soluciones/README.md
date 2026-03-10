@@ -1,1 +1,213 @@
+# Taller de Python - Manejo y Limpieza de Datos
 
+## Infraestructura para Grandes Volúmenes de Datos
+
+---
+
+## Instrucciones de Entrega
+
+**Fecha límite:** Jueves 5 de marzo, 11:59 PM
+
+### Paso 1: Fork del Repositorio
+
+Debe hacer un **fork** de este repositorio a su cuenta de GitHub.
+
+¿No sabes cómo hacer un fork? Mira este video tutorial: [Cómo hacer un Fork en GitHub](https://www.youtube.com/watch?v=3m7Z3g_U-Cs)
+
+### Paso 2: Completar las Soluciones
+
+Clone su fork y complete los 30 ejercicios en la carpeta `soluciones/`. Actualice el README con las respuestas correctas.
+
+### Paso 3: Pull Request
+
+Una vez completado, cree un **Pull Request (PR)** hacia el repositorio principal. 
+
+**Recursos útiles:**
+- [Guía de Pull Requests en GitHub](https://www.youtube.com/watch?v=Zqft6yNRuNs)
+
+**El PR debe incluir:**
+- Código de las 30 soluciones en `soluciones/`
+- README actualizado con todas las respuestas
+- Descripción clara de su trabajo
+- Cualquier mejora o documentación adicional que considere relevante
+
+### Importante
+
+⚠️ **Puede modificar cualquier archivo del repositorio EXCEPTO el archivo `data/personas.csv`**
+
+Siéntase libre de mejorar:
+- Documentación adicional
+- Scripts de verificación
+- Visualizaciones
+- Organización del código
+- Cualquier otra mejora que considere valiosa
+
+---
+
+## Rúbrica de Calificación
+
+### Requisitos Mínimos (Aprobado)
+- ✅ Las 30 soluciones implementadas en `soluciones/`
+- ✅ Todas las respuestas verificadas y correctas
+- ✅ README actualizado con las respuestas
+- ✅ Código limpio y funcional
+
+### Puntaje Extra (Ganador del PR)
+
+**🏆 El Pull Request mejor presentado será aceptado y se convertirá en la versión oficial del taller.**
+
+**Beneficios del ganador:**
+- Su PR será merged al repositorio principal
+- Su trabajo se convertirá en la referencia oficial del taller
+- **+1.0 punto adicional en la calificación final**
+
+**Criterios de evaluación para el mejor PR:**
+- 📊 Calidad del código y organización
+- 📝 Claridad de la documentación
+- 🎨 Presentación profesional del repositorio
+- 💡 Mejoras o aportes adicionales al proyecto
+- ✨ Creatividad en la presentación de resultados
+
+**Nota:** Todas las soluciones serán verificadas automáticamente. Resultados incorrectos descalificarán automáticamente al participante.
+
+---
+
+## Estructura del Repositorio
+
+El repositorio debe contener:
+
+```
+├── soluciones/
+│   ├── 01.py
+│   ├── 02.py
+│   ├── 03.py
+│   ├── ...
+│   └── 30.py
+├── data/
+│   └── personas.csv
+└── README.md  (con las soluciones)
+```
+
+Cada archivo `.py` dentro de la carpeta `soluciones/` debe contener el código que resuelve el ejercicio correspondiente.
+
+---
+
+## Sobre el Dataset
+
+- **Archivo:** `data/personas.csv`
+- **Registros:** 300,000 filas
+- **Columnas:** `id`, `nombre_cifrado`, `apellido_cifrado`, `ciudad`, `profesion`, `email`, `fecha_nacimiento`, `salario`, `activo`
+
+### Datos sucios
+
+El dataset tiene intencionalmente datos sucios en el 30% de cada columna:
+- Espacios adicionales
+- Caracteres especiales (@, %, #)
+- Mayúsculas inconsistentes
+- Formatos variados
+
+### Descifrar nombres y apellidos
+
+Los campos `nombre_cifrado` y `apellido_cifrado` usan cifrado ROT13:
+
+```python
+import codecs
+nombre = codecs.decode(texto, 'rot_13')
+```
+
+---
+
+## Ejercicios y Soluciones
+
+A continuación se listan los 30 ejercicios. **Debe escribir el valor exacto de la respuesta** en la columna "Solución".
+
+| # | Ejercicio | Solución |
+|---|-----------|----------|
+| 01 | ¿Cuántas filas tienen el campo `id` con caracteres no numéricos? | `el campo id con caracteres no numéricos tiene 83648 filas` |
+| 02 | ¿Cuántas veces aparece el nombre "Maria" en el dataset? | `El numero de repeticiones de Maria es: 4160` |
+| 03 | ¿Cuántas veces aparece el nombre "Juan" en el dataset? | `Juan aparece:  3986` |
+| 04 | ¿Cuál es el nombre más frecuente y cuántas veces aparece? | `El nombre mas frecuente es: Gonzalo, Aparece: 4221 veces` |
+| 05 | ¿Cuál es el apellido más frecuente y cuántas veces aparece? | `El apellido mas frecuente es: Reyes, Aparece: 7490 veces` |
+| 06 | ¿Cuántos registros tienen la ciudad "Bogota" después de limpiar? | `Existen 14739 registros correspondientes a la ciudad de Bogotá.` |
+| 07 | ¿Cuántos registros tienen la ciudad "Medellin" después de limpiar? | `Existen 14989 registros correspondientes a la ciudad de Medellin.` |
+| 08 | ¿Cuántas ciudades únicas existen después de normalizar? | `Existen 40 ciudades únicas en el dataset.` |
+| 09 | ¿Cuántos registros tienen la profesión "Ingeniero" después de limpiar? | `Registros con profesión Ingeniero: 11899` |
+| 10 | ¿Cuántos registros tienen la profesión "Programador" después de limpiar? | `Existen 11875 registros con la profesión 'Programador'.` |
+| 11 | ¿Cuántas profesiones únicas existen después de normalizar? | `Existen 44 profesiones únicas después de normalizar y corregir.` |
+| 12 | ¿Cuántos registros tienen el campo `email` con espacios adicionales? | `Existen 45447 registros con espacios adicionales en el campo email.` |
+| 13 | ¿Cuántos registros tienen el campo `salario` con caracteres no numéricos? | `Registros con caracteres no numéricos en salario: 85266` |
+| 14 | ¿Cuál es el salario promedio después de limpiar? | `El salario promedio después de limpiar es: 7,659,644.90` |
+| 15 | ¿Cuál es el salario máximo después de limpiar? | `El salario máximo después de limpiar es: 14,999,995.00` |
+| 16 | ¿Cuál es el salario mínimo después de limpiar? | `El salario mínimo después de limpiar es: 1,000,032.00` |
+| 17 | ¿Cuántos registros tienen `activo` como verdadero después de normalizar? | `Existen 139582 registros con 'activo' como verdadero.` |
+| 18 | ¿Cuántos registros tienen `activo` como falso después de normalizar? | `Existen 138878 registros con 'activo' como falso.` |
+| 19 | ¿Cuántos registros tienen fecha de nacimiento con formato diferente a YYYY-MM-DD? | `Existen 89823 registros con formato incorrecto en fecha_nacimiento.` |
+| 20 | ¿Cuántas personas nacieron entre 1990 y 2000 (inclusive)? | `Personas nacidas entre 1990 y 2000: 37518` |
+| 21 | ¿Cuántas personas nacieron antes de 1960? | `Personas nacidas antes de 1960: 46713` |
+| 22 | ¿Cuántas personas tienen más de 50 años (fecha actual: 2026-02-26)? | `Personas con más de 50 años a fecha 2026-02-26: 98214` |
+| 23 | ¿Cuántos registros tienen nombre "Carlos" y viven en "Cali"? | `Registros con nombre 'Carlos' que viven en Cali: 186` |
+| 24 | ¿Cuántos registros tienen nombre "Ana" y son "Medico"? | `Registros con nombre 'Ana' y profesión 'Medico': 170` |
+| 25 | ¿Cuántos registros tienen profesión "Abogado" y salario > 10,000,000? | `Registros con profesión 'Abogado' y salario > 10,000,000: 4342` |
+| 26 | ¿Cuántos registros tienen ciudad "Barranquilla", activos y nacidos después de 1980? | `3188` |
+| 27 | ¿Cuál es la ciudad con más "Ingenieros"? | `La ciudad con más ingenieros es 'popayan` |
+| 28 | ¿Cuál es la profesión con el salario promedio más alto? | `La profesión con salario promedio más alto es 'biologo' con 8,073,516.86` |
+| 29 | ¿Cuántos registros tienen email con dominio "gmail.com"? | `Registros con email de dominio 'gmail.com': 52789` |
+| 30 | ¿Cuántos registros tienen nombre "Jose" y apellido "Garcia"? | `Registros con nombre 'Jose' y apellido 'Garcia': 96` |
+
+---
+
+## Ejemplo de Solución
+
+### Archivo `soluciones/02.py`
+
+```python
+import pandas as pd
+import codecs
+
+# Cargar datos
+df = pd.read_csv('data/personas.csv')
+
+# Descifrar nombres con ROT13
+df['nombre'] = df['nombre_cifrado'].apply(lambda x: codecs.decode(str(x), 'rot_13'))
+
+# Contar cuántas veces aparece "Maria"
+cantidad = df[df['nombre'] == 'Maria'].shape[0]
+
+print(f"El nombre 'Maria' aparece {cantidad} veces")
+```
+
+### En el README, la solución se vería así:
+
+| # | Ejercicio | Solución |
+|---|-----------|----------|
+| 02 | ¿Cuántas veces aparece el nombre "Maria" en el dataset? | `15234` |
+
+*(El número 15234 es solo un ejemplo, debe calcular el valor real)*
+
+---
+
+## Comandos Útiles
+
+```bash
+# Ejecutar un script de solución
+uv run python soluciones/01.py
+
+# O si no usa uv
+python soluciones/01.py
+```
+
+---
+
+## Dependencias
+
+El proyecto usa `pandas` y `matplotlib`. Si usa `uv`:
+
+```bash
+uv add pandas matplotlib
+```
+
+Si usa `pip`:
+
+```bash
+pip install pandas matplotlib
+```

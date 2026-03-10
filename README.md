@@ -123,36 +123,38 @@ A continuación se listan los 30 ejercicios. **Debe escribir el valor exacto de 
 
 | # | Ejercicio | Solución |
 |---|-----------|----------|
-| 01 | ¿Cuántas filas tienen el campo `id` con caracteres no numéricos? | `PENDIENTE` |
-| 02 | ¿Cuántas veces aparece el nombre "Maria" en el dataset? | `4160` |
-| 03 | ¿Cuántas veces aparece el nombre "Juan" en el dataset? | `PENDIENTE` |
-| 04 | ¿Cuál es el nombre más frecuente y cuántas veces aparece? | `PENDIENTE` |
-| 05 | ¿Cuál es el apellido más frecuente y cuántas veces aparece? | `PENDIENTE` |
-| 06 | ¿Cuántos registros tienen la ciudad "Bogota" después de limpiar? | `PENDIENTE` |
-| 07 | ¿Cuántos registros tienen la ciudad "Medellin" después de limpiar? | `PENDIENTE` |
-| 08 | ¿Cuántas ciudades únicas existen después de normalizar? | `PENDIENTE` |
-| 09 | ¿Cuántos registros tienen la profesión "Ingeniero" después de limpiar? | `PENDIENTE` |
-| 10 | ¿Cuántos registros tienen la profesión "Programador" después de limpiar? | `PENDIENTE` |
-| 11 | ¿Cuántas profesiones únicas existen después de normalizar? | `PENDIENTE` |
-| 12 | ¿Cuántos registros tienen el campo `email` con espacios adicionales? | `PENDIENTE` |
-| 13 | ¿Cuántos registros tienen el campo `salario` con caracteres no numéricos? | `PENDIENTE` |
-| 14 | ¿Cuál es el salario promedio después de limpiar? | `PENDIENTE` |
-| 15 | ¿Cuál es el salario máximo después de limpiar? | `PENDIENTE` |
-| 16 | ¿Cuál es el salario mínimo después de limpiar? | `PENDIENTE` |
-| 17 | ¿Cuántos registros tienen `activo` como verdadero después de normalizar? | `PENDIENTE` |
-| 18 | ¿Cuántos registros tienen `activo` como falso después de normalizar? | `PENDIENTE` |
-| 19 | ¿Cuántos registros tienen fecha de nacimiento con formato diferente a YYYY-MM-DD? | `PENDIENTE` |
-| 20 | ¿Cuántas personas nacieron entre 1990 y 2000 (inclusive)? | `PENDIENTE` |
-| 21 | ¿Cuántas personas nacieron antes de 1960? | `PENDIENTE` |
-| 22 | ¿Cuántas personas tienen más de 50 años (fecha actual: 2026-02-26)? | `PENDIENTE` |
-| 23 | ¿Cuántos registros tienen nombre "Carlos" y viven en "Cali"? | `PENDIENTE` |
-| 24 | ¿Cuántos registros tienen nombre "Ana" y son "Medico"? | `PENDIENTE` |
-| 25 | ¿Cuántos registros tienen profesión "Abogado" y salario > 10,000,000? | `PENDIENTE` |
-| 26 | ¿Cuántos registros tienen ciudad "Barranquilla", activos y nacidos después de 1980? | `PENDIENTE` |
-| 27 | ¿Cuál es la ciudad con más "Ingenieros"? | `PENDIENTE` |
-| 28 | ¿Cuál es la profesión con el salario promedio más alto? | `PENDIENTE` |
-| 29 | ¿Cuántos registros tienen email con dominio "gmail.com"? | `PENDIENTE` |
-| 30 | ¿Cuántos registros tienen nombre "Jose" y apellido "Garcia"? | `PENDIENTE` |
+| 01 | ¿Cuántas filas tienen el campo `id` con caracteres no numéricos? | `el campo id con caracteres no numéricos tiene 83648 filas` |
+| 02 | ¿Cuántas veces aparece el nombre "Maria" en el dataset? | `El numero de repeticiones de Maria es: 4160` |
+| 03 | ¿Cuántas veces aparece el nombre "Juan" en el dataset? | `Juan aparece:  3986` |
+| 04 | ¿Cuál es el nombre más frecuente y cuántas veces aparece? | `El nombre mas frecuente es: Gonzalo
+Aparece: 4221 veces` |
+| 05 | ¿Cuál es el apellido más frecuente y cuántas veces aparece? | `El apellido mas frecuente es: Reyes
+Aparece: 7490 veces` |
+| 06 | ¿Cuántos registros tienen la ciudad "Bogota" después de limpiar? | `Existen 14739 registros correspondientes a la ciudad de Bogotá.` |
+| 07 | ¿Cuántos registros tienen la ciudad "Medellin" después de limpiar? | `Existen 14989 registros correspondientes a la ciudad de Medellin.` |
+| 08 | ¿Cuántas ciudades únicas existen después de normalizar? | `Existen 40 ciudades únicas en el dataset.` |
+| 09 | ¿Cuántos registros tienen la profesión "Ingeniero" después de limpiar? | `Registros con profesión Ingeniero: 11899` |
+| 10 | ¿Cuántos registros tienen la profesión "Programador" después de limpiar? | `Existen 11875 registros con la profesión 'Programador'.` |
+| 11 | ¿Cuántas profesiones únicas existen después de normalizar? | `Existen 44 profesiones únicas después de normalizar y corregir.` |
+| 12 | ¿Cuántos registros tienen el campo `email` con espacios adicionales? | `Existen 45447 registros con espacios adicionales en el campo email.` |
+| 13 | ¿Cuántos registros tienen el campo `salario` con caracteres no numéricos? | `Registros con caracteres no numéricos en salario: 85266` |
+| 14 | ¿Cuál es el salario promedio después de limpiar? | `El salario promedio después de limpiar es: 7,659,644.90` |
+| 15 | ¿Cuál es el salario máximo después de limpiar? | `El salario máximo después de limpiar es: 14,999,995.00` |
+| 16 | ¿Cuál es el salario mínimo después de limpiar? | `El salario mínimo después de limpiar es: 1,000,032.00` |
+| 17 | ¿Cuántos registros tienen `activo` como verdadero después de normalizar? | `Existen 139582 registros con 'activo' como verdadero.` |
+| 18 | ¿Cuántos registros tienen `activo` como falso después de normalizar? | `Existen 138878 registros con 'activo' como falso.` |
+| 19 | ¿Cuántos registros tienen fecha de nacimiento con formato diferente a YYYY-MM-DD? | `Existen 89823 registros con formato incorrecto en fecha_nacimiento.` |
+| 20 | ¿Cuántas personas nacieron entre 1990 y 2000 (inclusive)? | `Personas nacidas entre 1990 y 2000: 37518` |
+| 21 | ¿Cuántas personas nacieron antes de 1960? | `Personas nacidas antes de 1960: 46713` |
+| 22 | ¿Cuántas personas tienen más de 50 años (fecha actual: 2026-02-26)? | `Personas con más de 50 años a fecha 2026-02-26: 98214` |
+| 23 | ¿Cuántos registros tienen nombre "Carlos" y viven en "Cali"? | `Registros con nombre 'Carlos' que viven en Cali: 186` |
+| 24 | ¿Cuántos registros tienen nombre "Ana" y son "Medico"? | `Registros con nombre 'Ana' y profesión 'Medico': 170` |
+| 25 | ¿Cuántos registros tienen profesión "Abogado" y salario > 10,000,000? | `Registros con profesión 'Abogado' y salario > 10,000,000: 4342` |
+| 26 | ¿Cuántos registros tienen ciudad "Barranquilla", activos y nacidos después de 1980? | `3188` |
+| 27 | ¿Cuál es la ciudad con más "Ingenieros"? | `La ciudad con más ingenieros es 'popayan` |
+| 28 | ¿Cuál es la profesión con el salario promedio más alto? | `La profesión con salario promedio más alto es 'biologo' con 8,073,516.86` |
+| 29 | ¿Cuántos registros tienen email con dominio "gmail.com"? | `Registros con email de dominio 'gmail.com': 52789` |
+| 30 | ¿Cuántos registros tienen nombre "Jose" y apellido "Garcia"? | `Registros con nombre 'Jose' y apellido 'Garcia': 96` |
 
 ---
 

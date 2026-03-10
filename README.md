@@ -126,10 +126,8 @@ A continuación se listan los 30 ejercicios. **Debe escribir el valor exacto de 
 | 01 | ¿Cuántas filas tienen el campo `id` con caracteres no numéricos? | `el campo id con caracteres no numéricos tiene 83648 filas` |
 | 02 | ¿Cuántas veces aparece el nombre "Maria" en el dataset? | `El numero de repeticiones de Maria es: 4160` |
 | 03 | ¿Cuántas veces aparece el nombre "Juan" en el dataset? | `Juan aparece:  3986` |
-| 04 | ¿Cuál es el nombre más frecuente y cuántas veces aparece? | `El nombre mas frecuente es: Gonzalo
-Aparece: 4221 veces` |
-| 05 | ¿Cuál es el apellido más frecuente y cuántas veces aparece? | `El apellido mas frecuente es: Reyes
-Aparece: 7490 veces` |
+| 04 | ¿Cuál es el nombre más frecuente y cuántas veces aparece? | `El nombre mas frecuente es: Gonzalo, Aparece: 4221 veces` |
+| 05 | ¿Cuál es el apellido más frecuente y cuántas veces aparece? | `El apellido mas frecuente es: Reyes, Aparece: 7490 veces` |
 | 06 | ¿Cuántos registros tienen la ciudad "Bogota" después de limpiar? | `Existen 14739 registros correspondientes a la ciudad de Bogotá.` |
 | 07 | ¿Cuántos registros tienen la ciudad "Medellin" después de limpiar? | `Existen 14989 registros correspondientes a la ciudad de Medellin.` |
 | 08 | ¿Cuántas ciudades únicas existen después de normalizar? | `Existen 40 ciudades únicas en el dataset.` |
